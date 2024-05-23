@@ -14,6 +14,71 @@
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  
+[[redirects]]
+  from = "/apetros"
+  to = "/author/petros-aristidou"
+  status = 302
+
+[[redirects]]
+  from = "/petros-aristidou"
+  to = "/author/petros-aristidou"
+  status = 302
+
+[[redirects]]
+  from = "/git"
+  to = "https://github.com/SPS-L"
+  status = 302
+
+[[redirects]]
+  from = "/pyramses"
+  to = "https://pyramses.paristidou.info"
+  status = 302
+
+[[redirects]]
+  from = "/post/2020_phd_position_rte/"
+  to = "/post/2020_phd_position_num/"
+  status = 302
+
+[[redirects]]
+  from = "/open-positions"
+  to = "/categories/open-positions/"
+  status = 302
+
+[[redirects]]
+  from = "/jhub"
+  to = "https://jhub.sps-lab.org/"
+  status = 302
+
+[[redirects]]
+  from = "/Nordic_JhubStart"
+  to = "https://jhub.sps-lab.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FSPS-L%2FNordic_JhubStart&urlpath=lab%2Ftree%2FNordic_JhubStart%2FExecute.ipynb&branch=main"
+  status = 302
+
+[[redirects]]
+  from = "/jhub-nordic"
+  to = "https://jhub.sps-lab.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FSPS-L%2FNordic_JhubStart&urlpath=lab%2Ftree%2FNordic_JhubStart%2FExecute.ipynb&branch=main"
+  status = 302
+  
+[[redirects]]
+  from = "/jhub-sync-mach"
+  to = "https://jhub.sps-lab.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FSPS-L%2FSync_mach_Octave&urlpath=lab%2Ftree%2FSync_mach_Octave%2F&branch=main"
+  status = 302
+
+[[redirects]]
+  from = "/jhub-econ-oper"
+  to = "https://jhub.sps-lab.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FSPS-L%2FEconomic-Operation-examples&urlpath=lab%2Ftree%2FEconomic-Operation-examples%2FED_example.ipynb&branch=main"
+  status = 302 
+
+[[redirects]]
+  from = "/jhub-5-bus"
+  to = "https://jhub.sps-lab.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FSPS-L%2F5_bus_test_system&urlpath=lab%2Ftree%2F5_bus_test_system%2FCase+2.ipynb&branch=main"
+  status = 302 
+
+[[redirects]]
+  from = "/een442-trip"
+  to = "https://forms.microsoft.com/e/Gjud34gfq2"
+  status = 302 
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
